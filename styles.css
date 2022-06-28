@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 :root{
     --bg-btn: #ffffff;
@@ -10,10 +11,10 @@
 }
 body{
     background-color: var(--bg-page);
-    color: var(--bg-btn);
 }
 .logo{
     font-size: 28px;
+    color: var(--bg-btn);
 }
 .nav{
     min-height: 10vh;
@@ -45,4 +46,115 @@ a{
     font-size: 20px;
     transition: .5s;
     color: var(--bg-btn);
+}
+.main-about{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 90vh;
+    justify-content: center;
+    margin-top: 100px;
+    color: var(--bg-btn);
+
+}
+.container-about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.title{
+    font-size: 35px;
+}
+.desc-title{
+    color: var(--color-text);
+    font-size: 28px ;
+}
+.container-about img{
+    margin-top: -40px;
+}
+.line{
+    width: 80%;
+    height: 1px;
+    background-color: var(--color-text);
+    margin: auto;
+}
+section{
+    width: 100%;
+    min-height:100vh ;
+    display: flex;
+}
+.container-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+svg{
+    opacity: 50%;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.front{
+    position: absolute;
+    top: 45%;
+    left: 23%;
+    transform: translate(-50%, -25%);
+    color: var(--bg-btn);
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+}
+.back{
+    position: absolute;
+    top: 45%;
+    left: 77%;
+    transform: translate(-50%, -25%);
+    color: var(--bg-btn);
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.title-front{
+    font-size: 32px;
+}
+.desc, .desc-right{
+    font-size: 20px;
+}
+.desc-right{
+    text-align: right;
+}
+footer{
+    margin-top: 70px;
+}
+.col{
+    display: flex;
+    margin: auto;
+    color: var(--bg-btn);
+    margin-bottom: 40px ;
+}
+.main-footer{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+}
+.title-footer{
+    font-size: 24px;
+}
+.desc-footer{
+    font-size: 20px;
+}
+.last{
+    margin: auto;
 }
