@@ -34,6 +34,12 @@ body{
     margin-left: 15px;
     list-style: none;
 }
+a{
+    transition: .5s;
+}
+a:hover{
+    color: blueviolet;
+}
 .logo{
     width: 30%;
     text-align: center;
@@ -157,4 +163,5 @@ footer{
 }
 .last{
     margin: auto;
+
 }
