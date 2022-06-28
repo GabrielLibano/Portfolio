@@ -1,0 +1,44 @@
+.btn{
+    background-color: var(--bg-btn);
+    width: 300px;
+    height: 60px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+.btn-msg{
+    font-size: 23px;
+    position: absolute;
+}
+.btn-row1, .btn-row2{
+    width: 300px;
+    height: 30px;
+    background-color: #000000;
+    opacity: 10%;
+    position: absolute;
+}
+.btn-row1{
+    animation-name: btn-left;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    top: 0;
+}
+.btn-row2{
+    animation-name: btn-right;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes btn-left {
+    0%{left: 0%;}
+    50%{left: 50%;}
+    100%{left: 100%;}
+}
+@keyframes btn-right{
+    0%{right: 0%;}
+    50%{right: 50%;}
+    100%{right: 100%;}
+}
